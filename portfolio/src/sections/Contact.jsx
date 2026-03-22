@@ -11,7 +11,7 @@ const Contact = ({ data }) => {
         setStatus('loading');
 
         try {
-            const res = await fetch('/api/contact', {
+            const res = await fetch('https://portfolio-backend-8pug.onrender.com/api/contact', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(formData)
